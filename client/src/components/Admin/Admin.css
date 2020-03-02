@@ -1,0 +1,81 @@
+.songBlock .albumBlock {
+    margin-left: auto;
+    margin-right: auto;
+    position: float;
+    height: auto;
+}
+.songBlock{
+    width: 80%;
+}
+.albumBlock{
+    width: 80%;
+}
+main{
+    display:block;
+}
+.artist .song {
+    text-align: center;
+    background-color: blue;
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.newEntry {
+    text-align: center;
+    background-color: blue;
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.addEntry{
+    padding: 3px 8px;
+}
+
+.removeEntry{
+    padding: 3px 10px;
+    background-color: red;
+}
+/* Button styling */
+.button{
+    color: white;
+    background-color: #4a7ce9;
+    padding: 6px 18px;
+    border-radius: 3px;
+    border: none;
+    box-shadow: 0 4px #999;
+    margin:6px 2px;
+    cursor: pointer ;
+  }
+  .button:hover{
+    background-color: #2967ee;
+  }
+  .button:active{
+    transform: translateY(3px);
+    box-shadow: 0 1px #999;
+  }
+.results ul{
+    list-style-type: none;
+  }
+/* Styling depending on screen-width */
+@media only screen and (min-width: 353px){
+    .password {
+        margin-left:5px;
+    }
+    .songBlock{
+        width: 70%;
+    }
+    .albumBlock{
+        width: 70%;
+    }
+}
+@media only screen and (min-width: 480px){
+    .songBlock{
+        width: 255px;
+    }
+    .albumBlock{
+        width: 415px;
+    }
+}

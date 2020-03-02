@@ -1,0 +1,79 @@
+
+/* Styling for the navigation bar */
+nav 
+{
+    text-align: center;
+    border-right: none;
+    height: 32px;
+    background-color: #234eaa;
+}
+nav li{
+	display: inline-block;
+    margin-top:-15px;
+    font-size: auto;
+    color: white;
+    padding: 5px 16px;
+    text-decoration: none;
+    position:relative;
+    top: 3px;
+}
+.selected{
+    background-color: #4a7ce9;
+}
+#searchBar{
+    margin-top: -4px;
+    float: right;
+}
+.search{
+    background-color: white;
+    margin: 2px 0px;
+    float: right;
+    height: 21px;
+}
+.dropdown {
+    margin-top: -10px;
+    float: right;
+    overflow: hidden;
+}
+  
+.dropdown .dropbtn {
+    font-size: 16px;  
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    right: 0px;
+}
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.badge {
+    float: right;
+    background-color: red;
+    margin-top: -10px;
+    display: initial;
+    color: white;
+    font-weight: bold;
+    width: 10px;
+    border-radius: 10px;
+}

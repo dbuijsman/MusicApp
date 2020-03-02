@@ -1,0 +1,23 @@
+
+/* Styling for alphabet header */
+#startWith {
+	text-align: justify;
+    border-right: none;
+    height: 32px;
+	width: 100%;
+	min-width: 1000px;
+	background-color: blue;
+	border-bottom: 1px solid #ccc;  
+}
+li a {
+	color: white;
+}
+#startWith:after {
+	content: '';
+	display: inline-block;
+	width: 100%;
+}
+#startWith li {
+	display: inline-block;
+	margin-left: 5px;
+}

@@ -1,0 +1,7 @@
+.idea
+*.iml
+*.class
+/node_modules
+/leaflet
+/mariadb-10.4.8
+/.nyc_output
