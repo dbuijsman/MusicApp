@@ -1,9 +1,7 @@
-var fs = require('fs');
-var path = require('path');
-
 const mariadb = require('mariadb');
-const admin = require('./admin');
 const crypto = require('crypto');
+const userNameAdmin = "admin";
+const passwordAdmin = "PassWordMusicApp!";
 
 const userDB = process.argv[3];
 const passDB = process.argv[5];
@@ -147,8 +145,8 @@ function addForeignKeyReference(columnName, referenceTable){
 async function addAdmin(connection){
     const salt = crypto.randomBytes(32).toString('hex');
     var hash = crypto.createHmac('sha512', salt);
-    const passSave = hash.update("PassWordMusicApp!").digest('hex');
-    var insertNewUser = "INSERT INTO users (username, password, salt, lastlogin) VALUES (\"admin\", \"" + passSave + "\", \"" + salt + "\", current_timestamp());"
+    const passSave = hash.update(passwordAdmin).digest('hex');
+    var insertNewUser = "INSERT INTO users (username, password, salt, lastlogin) VALUES (\"" + userNameAdmin + "\", \"" + passSave + "\", \"" + salt + "\", current_timestamp());"
     await connection.query(insertNewUser);
 }
 
